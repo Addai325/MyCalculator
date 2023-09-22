@@ -1,0 +1,77 @@
+/* CSS styles for the entire webpage */
+
+/* Define font and background color for the entire page */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  text-align: center;
+}
+
+/* CSS styles for the header */
+h1 {
+  /* Set header text color */
+  color: #007bff;
+}
+
+/* CSS styles for the calculator container */
+.calculator {
+  /* Background color, maximum width, and center alignment */
+  background-color: #fff;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 5px;
+  /* Add a subtle box shadow for depth */
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+}
+
+/* CSS styles for labels */
+label {
+  /* Block display and margin for spacing */
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* CSS styles for number input fields */
+input[type="number"] {
+  /* Full width, padding, border, and border-radius */
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* CSS styles for submit button */
+button[type="submit"] {
+  /* Button appearance, color, padding, and cursor */
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px; /* Margin to separate from other elements */
+}
+
+/* CSS styles for result text */
+.result {
+  /* Increase font weight and size for emphasis */
+  font-weight: bold;
+  font-size: 18px;
+}
+
+/* CSS styles for links */
+a {
+  /* Remove underline and set link color */
+  text-decoration: none;
+  color: #007bff;
+  display: block; /* Display links as blocks for spacing */
+  margin-top: 10px; /* Margin to separate links */
+}
+
+/* CSS styles for link hover state */
+a:hover {
+  /* Underline links on hover for visual feedback */
+  text-decoration: underline;
+}

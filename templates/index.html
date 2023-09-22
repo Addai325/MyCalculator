@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Link to an external stylesheet (style.css) -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    
+    <!-- Set the title of the webpage -->
+    <title>Simple Calculator</title>
+</head>
+<body>
+    <!-- Page header -->
+    <h1>Simple Calculator</h1>
+    
+    <!-- Calculator container -->
+    <div class="calculator">
+        <!-- Calculator form with HTTP POST method -->
+        <form method="POST" action="/">
+            <!-- Label and input field for Number 1 -->
+            <label for="num1">Number 1:</label>
+            <input type="number" name="num1" id="num1" required>
+            
+            <!-- Label and input field for Number 2 -->
+            <label for="num2">Number 2:</label>
+            <input type="number" name="num2" id="num2" required>
+            
+            <!-- Buttons for different mathematical operations -->
+            <button type="submit" name="operation_type" value="add">Add</button>
+            <button type="submit" name="operation_type" value="subtract">Subtract</button>
+            <button type="submit" name="operation_type" value="multiply">Multiply</button>
+            <button type="submit" name="operation_type" value="divide">Divide</button>
+        </form>
+        
+        <!-- Display result if 'operation' is defined -->
+        {% if operation %}
+            <p class="result">Result: {{ result }}</p>
+            <!-- Link to go back to the home page -->
+            <a href="/">Back to Home</a>
+        {% endif %}
+    </div>
+</body>
+</html>
