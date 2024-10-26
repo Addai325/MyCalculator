@@ -14,7 +14,7 @@ def safe_divide(num1, num2):
     try:
         return num1 / num2
     except ZeroDivisionError:
-        return "Cannot divide by zero"
+        return "Cannot divide by Zero"
 
 operations = {
     'add': lambda num1, num2: num1 + num2,       # Addition operation
